@@ -1,0 +1,122 @@
+Armor Layer Formula (HTP)
+
+A universal flat-armor system designed to work with Relative Defense Formula.
+Simple, scalable, and perfect for RPG / ARPG / MMO / MOBA / Shooter armor systems.
+
+
+---
+
+Concept
+
+Armor = a post-mitigation, flat reduction layer applied after all other formulas.
+It scales with DEF but stays smaller, creating a clean separation:
+
+DEF = percentage mitigation (relative, dynamic)
+
+Armor = final flat reduction (stable, predictable)
+
+
+This fixes late-game tankiness without breaking low-tier combat.
+
+
+---
+
+Formula
+
+Armor = Defense ÷ 15
+(Clamp maximum armor ratio at Defense ÷ 10 through passives / traits / class bonuses)
+
+FinalDamage = Max(0, DamageAfterAllMitigation − Armor)
+
+
+---
+
+Examples
+
+Example 1
+
+Monster Hit: 10,000 dmg
+Player DEF: 1,500
+
+Armor = 1,500 ÷ 15 = 100
+DamageAfterAllMitigation (example): 7,000 → 6,900 final
+
+
+---
+
+Example 2 — High DEF scaling
+
+Monster Hit: 2,000 dmg
+Player DEF: 3,000
+
+Armor = 3,000 ÷ 15 = 200
+DamageAfterAllMitigation: 1,200
+Final = 1,000
+
+
+---
+
+Example 3 — Armor max-boost (DEF ÷ 10)
+
+Player DEF: 2,000
+Boost → Armor = 2,000 ÷ 10 = 200
+
+
+---
+
+Notes
+
+Armor is post-formula. Applied after Relative DEF or any other mitigation system.
+
+This cleanly buffs all classes, not only tanks.
+
+Helps low-damage monsters stay relevant while still rewarding defense builds.
+
+Prevents percentage defense from becoming useless at high level.
+
+Works perfectly for:
+
+RPG / ARPG
+
+MMO tanking systems
+
+Shooter ballistic armor
+
+Strategy units
+
+MOBAs (final damage clamp layer)
+
+
+
+
+---
+
+Recommended Use
+
+Combine with Relative Defense Formula (HTP) for best progression curves:
+
+1. Relative DEF handles dynamic percent scaling
+
+
+2. Armor handles final stability & late-game survivability
+
+
+
+This two-layer system produces extremely satisfying tank progression without power creep.
+
+
+---
+
+Author
+
+HTP
+
+Twitter/X:
+
+https://x.com/AloName15
+
+Donate (Buy me bún bò):
+
+https://buymeacoffee.com/chaoshtp
+
+Public domain. Use freely.
