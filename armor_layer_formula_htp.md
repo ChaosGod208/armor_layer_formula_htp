@@ -24,9 +24,13 @@ This fixes late-game tankiness without breaking low-tier combat.
 Formula
 
 Armor = Defense ÷ 15
-(Clamp maximum armor ratio at Defense ÷ 10 through passives / traits / class bonuses)
+(Clamp maximum armor ratio at Defense ÷ 10 through passives / traits / class bonuses,...)
 
-FinalDamage = Max(0, DamageAfterAllMitigation − Armor)
+FinalDamage = Max(0, Damage After All Mitigation − Armor)
+
+Why Max(0, ...):
+Prevent negative damage (which would heal player).
+Clean cap – no infinite tank, no heal exploit.
 
 
 ---
@@ -39,7 +43,8 @@ Monster Hit: 10,000 dmg
 Player DEF: 1,500
 
 Armor = 1,500 ÷ 15 = 100
-DamageAfterAllMitigation (example): 7,000 → 6,900 final
+Damage After All Mitigation: 7,000 
+Final = 6,900
 
 
 ---
@@ -50,7 +55,7 @@ Monster Hit: 2,000 dmg
 Player DEF: 3,000
 
 Armor = 3,000 ÷ 15 = 200
-DamageAfterAllMitigation: 1,200
+Damage After All Mitigation: 1,200
 Final = 1,000
 
 
