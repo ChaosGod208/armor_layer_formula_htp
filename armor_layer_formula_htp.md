@@ -29,7 +29,9 @@ Armor = Defense ÷ 15
 FinalDamage = Max(0, Damage After All Mitigation − Armor)
 
 Why Max(0, ...):
+
 Prevent negative damage (which would heal player).
+
 Clean cap – no infinite tank, no heal exploit.
 
 
@@ -40,10 +42,13 @@ Examples
 Example 1
 
 Monster Hit: 10,000 dmg
+
 Player DEF: 1,500
 
 Armor = 1,500 ÷ 15 = 100
+
 Damage After All Mitigation: 7,000 
+
 Final = 6,900
 
 
@@ -52,10 +57,13 @@ Final = 6,900
 Example 2 — High DEF scaling
 
 Monster Hit: 2,000 dmg
+
 Player DEF: 3,000
 
 Armor = 3,000 ÷ 15 = 200
+
 Damage After All Mitigation: 1,200
+
 Final = 1,000
 
 
@@ -64,6 +72,7 @@ Final = 1,000
 Example 3 — Armor max-boost (DEF ÷ 10)
 
 Player DEF: 2,000
+
 Boost → Armor = 2,000 ÷ 10 = 200
 
 
