@@ -87,6 +87,9 @@ Combine with **HTP Relative Defense Formula** for optimal results:
 ## 🔗 Original Gist
 
 HTP Armor Layer Formula — [Gist Version](https://gist.github.com/ChaosGod208/88ef5ca1a2edeb1796c79c905772e2cf)
+
+Relative defense formula - [Gist version](https://gist.github.com/ChaosGod208/f16731a46cc8c39b3392a47e7915aca3)
+
 Full gist archive (100+ frameworks): [ChaosGod208 gist](https://gist.github.com/ChaosGod208)
 
 ---
